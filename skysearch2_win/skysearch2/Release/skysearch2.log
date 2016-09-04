@@ -1,0 +1,329 @@
+﻿Build started 17.07.2015 0:45:16.
+     1>Project "C:\vcnet_proj\skysearch2\skysearch2\skysearch2.vcxproj" on node 2 (rebuild target(s)).
+     1>PrepareForBuild:
+         Creating directory "C:\vcnet_proj\skysearch2\Release\".
+       InitializeBuildStatus:
+         Creating "Release\skysearch2.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt blob_snode1.c crypto\md5.c crypto\rijndael.c crypto\sha1.c decode_profile.c decode_profile2.c dh_384.c get_blob.c miracl_lib\mraes.c miracl_lib\mralloc.c miracl_lib\mrarth0.c miracl_lib\mrarth1.c miracl_lib\mrarth2.c miracl_lib\mrarth3.c miracl_lib\mrbits.c miracl_lib\mrbrick.c miracl_lib\mrbuild.c miracl_lib\mrcore.c miracl_lib\mrcrt.c miracl_lib\mrcurve.c miracl_lib\mrdouble.c miracl_lib\mrebrick.c miracl_lib\mrec2m.c miracl_lib\mrecn2.c miracl_lib\mrfast.c miracl_lib\mrflash.c miracl_lib\mrflsh1.c miracl_lib\mrflsh2.c miracl_lib\mrflsh3.c miracl_lib\mrflsh4.c miracl_lib\mrfrnd.c miracl_lib\mrgcd.c miracl_lib\mrgcm.c miracl_lib\mrgf2m.c miracl_lib\mrio1.c miracl_lib\mrio2.c miracl_lib\mrjack.c miracl_lib\mrlucas.c miracl_lib\mrmonty.c miracl_lib\mrmuldv.c miracl_lib\mrpi.c miracl_lib\mrpower.c miracl_lib\mrprime.c miracl_lib\mrrand.c miracl_lib\mrround.c miracl_lib\mrscrt.c miracl_lib\mrshs.c miracl_lib\mrshs256.c miracl_lib\mrshs512.c miracl_lib\mrsmall.c miracl_lib\mrsroot.c miracl_lib\mrstrong.c miracl_lib\mrxgcd.c miracl_lib\mrzzn2.c miracl_lib\mrzzn2b.c miracl_lib\mrzzn3.c miramax.c skype\ext42.c "skype\pack-4142.c" skype\skype_rc4.c "skype\unpack-4142.c" skysearch2.c slots_util.c sock_comm.c tcp_setup.c udp_pkt.c util.c vcard_save.c
+         blob_snode1.c
+     1>blob_snode1.c(26): warning C4013: 'main_pack_into' undefined; assuming extern returning int
+     1>blob_snode1.c(28): warning C4013: 'show_memory' undefined; assuming extern returning int
+     1>blob_snode1.c(29): warning C4013: 'main_unpack42' undefined; assuming extern returning int
+     1>blob_snode1.c(31): warning C4013: 'encode_to_7bit' undefined; assuming extern returning int
+         md5.c
+         rijndael.c
+         sha1.c
+         decode_profile.c
+     1>decode_profile.c(33): warning C4013: 'printf' undefined; assuming extern returning int
+     1>decode_profile.c(50): warning C4013: 'decode_profile' undefined; assuming extern returning int
+     1>decode_profile.c(72): warning C4013: 'main_unpack_profile' undefined; assuming extern returning int
+     1>decode_profile.c(73): warning C4013: 'main_unpack_get' undefined; assuming extern returning int
+     1>decode_profile.c(99): warning C4013: 'sprintf' undefined; assuming extern returning int
+         decode_profile2.c
+     1>decode_profile2.c(35): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>decode_profile2.c(39): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>decode_profile2.c(43): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>decode_profile2.c(47): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>decode_profile2.c(58): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>decode_profile2.c(64): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>decode_profile2.c(66): warning C4013: 'add_vcard' undefined; assuming extern returning int
+     1>decode_profile2.c(114): warning C4013: 'decode_profile' undefined; assuming extern returning int
+     1>decode_profile2.c(118): warning C4013: 'show_memory_with_ascii' undefined; assuming extern returning int
+     1>decode_profile2.c(151): warning C4013: 'main_unpack_profile' undefined; assuming extern returning int
+     1>decode_profile2.c(152): warning C4013: 'main_unpack_get' undefined; assuming extern returning int
+     1>decode_profile2.c(192): warning C4013: 'get_04_0B_blob_seq' undefined; assuming extern returning int
+     1>decode_profile2.c(180): warning C4101: 'p' : unreferenced local variable
+     1>decode_profile2.c(179): warning C4101: 'i' : unreferenced local variable
+     1>decode_profile2.c(177): warning C4101: 'ptr' : unreferenced local variable
+         dh_384.c
+         get_blob.c
+     1>get_blob.c(37): warning C4013: 'main_unpack_checkblob' undefined; assuming extern returning int
+     1>get_blob.c(41): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>get_blob.c(44): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>get_blob.c(49): warning C4013: 'main_unpack_getobj02slot' undefined; assuming extern returning int
+     1>get_blob.c(60): warning C4013: 'main_unpack_getobj02ip' undefined; assuming extern returning int
+     1>get_blob.c(98): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>get_blob.c(115): warning C4013: 'main_unpack_getbuf_seq' undefined; assuming extern returning int
+     1>get_blob.c(125): warning C4013: 'show_memory' undefined; assuming extern returning int
+     1>get_blob.c(143): warning C4013: 'main_unpack_getobj00' undefined; assuming extern returning int
+         mraes.c
+         mralloc.c
+         mrarth0.c
+         mrarth1.c
+         mrarth2.c
+         mrarth3.c
+         mrbits.c
+         mrbrick.c
+         mrbuild.c
+         mrcore.c
+         mrcrt.c
+         mrcurve.c
+         Compiling...
+         mrdouble.c
+         mrebrick.c
+         mrec2m.c
+         mrecn2.c
+         mrfast.c
+         mrflash.c
+         mrflsh1.c
+         mrflsh2.c
+         mrflsh3.c
+         mrflsh4.c
+         mrfrnd.c
+         mrgcd.c
+         mrgcm.c
+         mrgf2m.c
+     1>miracl_lib\mrgf2m.c(350): warning C4101: 'k' : unreferenced local variable
+     1>miracl_lib\mrgf2m.c(612): warning C4101: 'r' : unreferenced local variable
+     1>miracl_lib\mrgf2m.c(612): warning C4101: 't' : unreferenced local variable
+     1>miracl_lib\mrgf2m.c(611): warning C4101: 'j' : unreferenced local variable
+         mrio1.c
+         mrio2.c
+         mrjack.c
+         mrlucas.c
+         mrmonty.c
+         mrmuldv.c
+         Compiling...
+         mrpi.c
+         mrpower.c
+         mrprime.c
+         mrrand.c
+         mrround.c
+         mrscrt.c
+         mrshs.c
+         mrshs256.c
+         mrshs512.c
+         mrsmall.c
+         mrsroot.c
+         mrstrong.c
+         mrxgcd.c
+         mrzzn2.c
+         mrzzn2b.c
+         mrzzn3.c
+         miramax.c
+     1>miramax.c(61): warning C4101: 'length' : unreferenced local variable
+     1>miramax.c(61): warning C4101: 'j' : unreferenced local variable
+     1>miramax.c(83): warning C4101: 'length' : unreferenced local variable
+     1>miramax.c(83): warning C4101: 'n' : unreferenced local variable
+     1>miramax.c(83): warning C4101: 'i' : unreferenced local variable
+     1>miramax.c(388): warning C4013: 'show_memory_with_ascii' undefined; assuming extern returning int
+     1>miramax.c(389): warning C4013: 'main_unpack' undefined; assuming extern returning int
+     1>miramax.c(397): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(188) : see declaration of 'strncpy'
+         ext42.c
+     1>skype\ext42.c(20): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>skype\ext42.c(21): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>skype\ext42.c(73): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>skype\ext42.c(74): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>skype\ext42.c(104): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>skype\ext42.c(175): warning C4018: '>' : signed/unsigned mismatch
+     1>skype\ext42.c(177): warning C4013: 'show_memory' undefined; assuming extern returning int
+     1>skype\ext42.c(190): warning C4013: 'unpack_4142' undefined; assuming extern returning int
+     1>skype\ext42.c(1255): warning C4013: 'pack_4142' undefined; assuming extern returning int
+         pack-4142.c
+         skype_rc4.c
+         Compiling...
+         unpack-4142.c
+         skysearch2.c
+     1>skysearch2.c(144): warning C4013: 'get_00_01_blob' undefined; assuming extern returning int
+     1>skysearch2.c(162): warning C4013: 'get_profiles2' undefined; assuming extern returning int
+     1>skysearch2.c(183): warning C4018: '<' : signed/unsigned mismatch
+     1>skysearch2.c(225): warning C4244: 'function' : conversion from 'time_t' to 'unsigned int', possible loss of data
+     1>skysearch2.c(232): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _strdup. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(238) : see declaration of 'strdup'
+     1>skysearch2.c(235): warning C4018: '<' : signed/unsigned mismatch
+     1>skysearch2.c(245): warning C4013: 'main_get_slotinfo' undefined; assuming extern returning int
+     1>skysearch2.c(257): warning C4013: 'init_vcard_array' undefined; assuming extern returning int
+     1>skysearch2.c(259): warning C4013: 'load_slots_file' undefined; assuming extern returning int
+     1>skysearch2.c(260): warning C4018: '<' : signed/unsigned mismatch
+     1>skysearch2.c(266): warning C4013: 'save_vcards_tofile' undefined; assuming extern returning int
+     1>skysearch2.c(214): warning C4101: 'destip' : unreferenced local variable
+     1>skysearch2.c(215): warning C4101: 'destport' : unreferenced local variable
+     1>skysearch2.c(218): warning C4101: 'our_public_ip' : unreferenced local variable
+     1>skysearch2.c(220): warning C4101: 'ret' : unreferenced local variable
+     1>skysearch2.c(280): warning C4244: 'function' : conversion from 'time_t' to 'unsigned int', possible loss of data
+     1>skysearch2.c(287): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _strdup. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(238) : see declaration of 'strdup'
+     1>skysearch2.c(299): warning C4013: 'make_tcp_client_sess1_pkt0_handshake1' undefined; assuming extern returning int
+     1>skysearch2.c(300): warning C4013: 'make_tcp_client_sess1_pkt1' undefined; assuming extern returning int
+     1>skysearch2.c(302): warning C4013: 'make_tcp_client_sess1_pkt3' undefined; assuming extern returning int
+         slots_util.c
+     1>slots_util.c(21): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>slots_util.c(24): warning C4013: 'exit' undefined; assuming extern returning int
+     1>slots_util.c(30): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(253) : see declaration of 'fscanf'
+     1>slots_util.c(33): warning C4013: 'strstr' undefined; assuming extern returning int
+     1>slots_util.c(33): warning C4047: '!=' : 'int' differs in levels of indirection from 'void *'
+     1>slots_util.c(36): warning C4047: '!=' : 'int' differs in levels of indirection from 'void *'
+     1>slots_util.c(39): warning C4047: '!=' : 'int' differs in levels of indirection from 'void *'
+     1>slots_util.c(40): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(325) : see declaration of 'sscanf'
+     1>slots_util.c(45): warning C4013: 'strchr' undefined; assuming extern returning int
+     1>slots_util.c(45): warning C4047: '=' : 'char *' differs in levels of indirection from 'int'
+     1>slots_util.c(48): warning C4013: 'malloc' undefined; assuming extern returning int
+     1>slots_util.c(48): warning C4047: '=' : 'char *' differs in levels of indirection from 'int'
+     1>slots_util.c(49): warning C4047: '=' : 'char *' differs in levels of indirection from 'int'
+     1>slots_util.c(50): warning C4013: 'strncpy' undefined; assuming extern returning int
+         sock_comm.c
+         tcp_setup.c
+     1>tcp_setup.c(160): warning C4013: 'show_memory' undefined; assuming extern returning int
+     1>tcp_setup.c(358): warning C4013: 'tcp_talk_send' undefined; assuming extern returning int
+     1>tcp_setup.c(139): warning C4101: 'supernode_last_data' : unreferenced local variable
+     1>tcp_setup.c(115): warning C4101: 'recvbuf' : unreferenced local variable
+     1>tcp_setup.c(119): warning C4101: 'iv' : unreferenced local variable
+     1>tcp_setup.c(117): warning C4101: 'local_rnd' : unreferenced local variable
+     1>tcp_setup.c(116): warning C4101: 'recvlen' : unreferenced local variable
+     1>tcp_setup.c(118): warning C4101: 'remote_rnd' : unreferenced local variable
+     1>tcp_setup.c(450): warning C4013: 'main_unpack_all' undefined; assuming extern returning int
+     1>tcp_setup.c(453): warning C4013: 'get_02_11_blob' undefined; assuming extern returning int
+     1>tcp_setup.c(394): warning C4101: 'buf1header' : unreferenced local variable
+     1>tcp_setup.c(395): warning C4101: 'buf1header_len' : unreferenced local variable
+     1>tcp_setup.c(392): warning C4101: 'rnd64bit' : unreferenced local variable
+     1>tcp_setup.c(387): warning C4101: 'tmplen' : unreferenced local variable
+     1>tcp_setup.c(391): warning C4101: 'sha1' : unreferenced local variable
+     1>tcp_setup.c(389): warning C4101: 'blkseq' : unreferenced local variable
+     1>tcp_setup.c(474): warning C4101: 'buf1header' : unreferenced local variable
+     1>tcp_setup.c(475): warning C4101: 'buf1header_len' : unreferenced local variable
+     1>tcp_setup.c(472): warning C4101: 'rnd64bit' : unreferenced local variable
+     1>tcp_setup.c(467): warning C4101: 'tmplen' : unreferenced local variable
+     1>tcp_setup.c(471): warning C4101: 'sha1' : unreferenced local variable
+     1>tcp_setup.c(469): warning C4101: 'blkseq' : unreferenced local variable
+     1>tcp_setup.c(605): warning C4013: 'make_tcp_reqslot_prepare' undefined; assuming extern returning int
+     1>tcp_setup.c(611): warning C4013: 'main_unpack42' undefined; assuming extern returning int
+     1>tcp_setup.c(651): warning C4013: 'get_02_03_blob' undefined; assuming extern returning int
+     1>tcp_setup.c(566): warning C4101: 'len2' : unreferenced local variable
+     1>tcp_setup.c(569): warning C4101: 'blkseq' : unreferenced local variable
+         udp_pkt.c
+     1>udp_pkt.c(151): warning C4013: 'Skype_RC4_Expand_IV_udp' undefined; assuming extern returning int
+         util.c
+         vcard_save.c
+     1>vcard_save.c(15): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>vcard_save.c(41): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _strdup. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(238) : see declaration of 'strdup'
+     1>vcard_save.c(54): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\vcnet_proj\skysearch2\Release\skysearch2.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\skysearch2.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\vcnet_proj\skysearch2\Release\skysearch2.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\vcnet_proj\skysearch2\Release\skysearch2.lib" /MACHINE:X86 Release\blob_snode1.obj
+         Release\md5.obj
+         Release\rijndael.obj
+         Release\sha1.obj
+         Release\decode_profile.obj
+         Release\decode_profile2.obj
+         Release\dh_384.obj
+         Release\get_blob.obj
+         Release\mraes.obj
+         Release\mralloc.obj
+         Release\mrarth0.obj
+         Release\mrarth1.obj
+         Release\mrarth2.obj
+         Release\mrarth3.obj
+         Release\mrbits.obj
+         Release\mrbrick.obj
+         Release\mrbuild.obj
+         Release\mrcore.obj
+         Release\mrcrt.obj
+         Release\mrcurve.obj
+         Release\mrdouble.obj
+         Release\mrebrick.obj
+         Release\mrec2m.obj
+         Release\mrecn2.obj
+         Release\mrfast.obj
+         Release\mrflash.obj
+         Release\mrflsh1.obj
+         Release\mrflsh2.obj
+         Release\mrflsh3.obj
+         Release\mrflsh4.obj
+         Release\mrfrnd.obj
+         Release\mrgcd.obj
+         Release\mrgcm.obj
+         Release\mrgf2m.obj
+         Release\mrio1.obj
+         Release\mrio2.obj
+         Release\mrjack.obj
+         Release\mrlucas.obj
+         Release\mrmonty.obj
+         Release\mrmuldv.obj
+         Release\mrpi.obj
+         Release\mrpower.obj
+         Release\mrprime.obj
+         Release\mrrand.obj
+         Release\mrround.obj
+         Release\mrscrt.obj
+         Release\mrshs.obj
+         Release\mrshs256.obj
+         Release\mrshs512.obj
+         Release\mrsmall.obj
+         Release\mrsroot.obj
+         Release\mrstrong.obj
+         Release\mrxgcd.obj
+         Release\mrzzn2.obj
+         Release\mrzzn2b.obj
+         Release\mrzzn3.obj
+         Release\miramax.obj
+         Release\ext42.obj
+         "Release\pack-4142.obj"
+         Release\skype_rc4.obj
+         "Release\unpack-4142.obj"
+         Release\skysearch2.obj
+         Release\slots_util.obj
+         Release\sock_comm.obj
+         Release\tcp_setup.obj
+         Release\udp_pkt.obj
+         Release\util.obj
+         Release\vcard_save.obj
+         Generating code
+     1>c:\vcnet_proj\skysearch2\skysearch2\miracl_lib\mrarth1.c(505): warning C4731: 'mr_sdiv' : frame pointer register 'ebp' modified by inline assembly code
+     1>c:\vcnet_proj\skysearch2\skysearch2\miracl_lib\mrarth1.c(512): warning C4731: 'mr_sdiv' : frame pointer register 'ebp' modified by inline assembly code
+     1>c:\vcnet_proj\skysearch2\skysearch2\miracl_lib\mrarth1.c(518): warning C4731: 'mr_sdiv' : frame pointer register 'ebp' modified by inline assembly code
+     1>c:\vcnet_proj\skysearch2\skysearch2\miracl_lib\mrarth1.c(227): warning C4731: 'mr_pmul' : frame pointer register 'ebp' modified by inline assembly code
+     1>c:\vcnet_proj\skysearch2\skysearch2\miracl_lib\mrarth1.c(236): warning C4731: 'mr_pmul' : frame pointer register 'ebp' modified by inline assembly code
+     1>c:\vcnet_proj\skysearch2\skysearch2\miracl_lib\mrarth1.c(241): warning C4731: 'mr_pmul' : frame pointer register 'ebp' modified by inline assembly code
+     1>c:\vcnet_proj\skysearch2\skysearch2\miracl_lib\mrarth2.c(1273): warning C4731: 'divide' : frame pointer register 'ebp' modified by inline assembly code
+     1>c:\vcnet_proj\skysearch2\skysearch2\miracl_lib\mrarth2.c(1280): warning C4731: 'divide' : frame pointer register 'ebp' modified by inline assembly code
+     1>c:\vcnet_proj\skysearch2\skysearch2\miracl_lib\mrarth2.c(1282): warning C4731: 'divide' : frame pointer register 'ebp' modified by inline assembly code
+     1>c:\vcnet_proj\skysearch2\skysearch2\miracl_lib\mrarth2.c(1286): warning C4731: 'divide' : frame pointer register 'ebp' modified by inline assembly code
+     1>c:\vcnet_proj\skysearch2\skysearch2\miracl_lib\mrarth2.c(1290): warning C4731: 'divide' : frame pointer register 'ebp' modified by inline assembly code
+     1>c:\vcnet_proj\skysearch2\skysearch2\miracl_lib\mrarth2.c(247): warning C4731: 'multiply' : frame pointer register 'ebp' modified by inline assembly code
+     1>c:\vcnet_proj\skysearch2\skysearch2\miracl_lib\mrarth2.c(253): warning C4731: 'multiply' : frame pointer register 'ebp' modified by inline assembly code
+     1>c:\vcnet_proj\skysearch2\skysearch2\miracl_lib\mrarth2.c(255): warning C4731: 'multiply' : frame pointer register 'ebp' modified by inline assembly code
+     1>c:\vcnet_proj\skysearch2\skysearch2\miracl_lib\mrarth2.c(259): warning C4731: 'multiply' : frame pointer register 'ebp' modified by inline assembly code
+     1>c:\vcnet_proj\skysearch2\skysearch2\miracl_lib\mrarth2.c(263): warning C4731: 'multiply' : frame pointer register 'ebp' modified by inline assembly code
+     1>c:\vcnet_proj\skysearch2\skysearch2\miracl_lib\mrarth2.c(646): warning C4731: 'multiply' : frame pointer register 'ebp' modified by inline assembly code
+     1>c:\vcnet_proj\skysearch2\skysearch2\miracl_lib\mrarth2.c(652): warning C4731: 'multiply' : frame pointer register 'ebp' modified by inline assembly code
+     1>c:\vcnet_proj\skysearch2\skysearch2\miracl_lib\mrarth2.c(654): warning C4731: 'multiply' : frame pointer register 'ebp' modified by inline assembly code
+     1>c:\vcnet_proj\skysearch2\skysearch2\miracl_lib\mrarth2.c(658): warning C4731: 'multiply' : frame pointer register 'ebp' modified by inline assembly code
+     1>c:\vcnet_proj\skysearch2\skysearch2\miracl_lib\mrarth2.c(662): warning C4731: 'multiply' : frame pointer register 'ebp' modified by inline assembly code
+     1>c:\vcnet_proj\skysearch2\skysearch2\miracl_lib\mrmonty.c(448): warning C4731: 'redc' : frame pointer register 'ebp' modified by inline assembly code
+     1>c:\vcnet_proj\skysearch2\skysearch2\miracl_lib\mrmonty.c(454): warning C4731: 'redc' : frame pointer register 'ebp' modified by inline assembly code
+     1>c:\vcnet_proj\skysearch2\skysearch2\miracl_lib\mrmonty.c(456): warning C4731: 'redc' : frame pointer register 'ebp' modified by inline assembly code
+     1>c:\vcnet_proj\skysearch2\skysearch2\miracl_lib\mrmonty.c(460): warning C4731: 'redc' : frame pointer register 'ebp' modified by inline assembly code
+     1>c:\vcnet_proj\skysearch2\skysearch2\miracl_lib\mrmonty.c(463): warning C4731: 'redc' : frame pointer register 'ebp' modified by inline assembly code
+         Finished generating code
+         skysearch2.vcxproj -> C:\vcnet_proj\skysearch2\Release\skysearch2.exe
+       Manifest:
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\vcnet_proj\skysearch2\Release\skysearch2.exe;#1" /manifest Release\skysearch2.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Release\skysearch2.unsuccessfulbuild".
+         Touching "Release\skysearch2.lastbuildstate".
+     1>Done Building Project "C:\vcnet_proj\skysearch2\skysearch2\skysearch2.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:13.42

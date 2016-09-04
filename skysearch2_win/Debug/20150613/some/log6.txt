@@ -1,0 +1,376 @@
+m-d-n2013 slot: #806 (0x00000326)
+
+Handshake v5.5 1 pkt len: 0x00000049
+Send pkt
+Len: 0x00000049
+E9 01 33 35 60 E4 5D 8C 4C 76 75 C2 AE D6 F8 F9 
+ 38 78 81 B6 BB 0F 18 B9 2D B8 7F 4B E0 18 C3 DE 
+ 52 B8 2F 1E E5 3F 45 21 ED 70 00 6D FF 19 E6 28 
+ 60 52 CF 84 B7 E9 97 D8 22 5E 80 C8 53 D3 C9 29 
+ E8 EA 54 69 53 5A E3 56 1B 
+Result
+Len: 0x0000005C
+6C CD 2A 0E 74 39 D2 AA 3F DC 4B 00 2B E8 9A B0 
+ 00 A0 D6 49 D6 2A 07 26 18 7F 27 41 48 B1 AF 50 
+ DF FE 75 E0 3E 16 07 60 03 8A F4 9E 78 1A AE F7 
+ 66 1F 44 E5 D2 9B 90 C1 FE D7 9C 5D EA D3 68 B9 
+ 96 8F F4 D5 02 0B 40 B1 2E 47 4C 4D 1A 43 18 A9 
+ C6 FF A4 C5 32 7B F0 A1 5E B7 FC 3D 
+MD5 SEND Hash
+Len: 0x00000008
+BF 9C 19 15 36 12 DB 4A 
+MD5 for compare Hash (should be)
+Len: 0x00000008
+0C 89 59 A5 F2 E8 02 BA 
+Send 2 pkt (8 byte hash) Result:
+Len: 0x00000008
+0C 89 59 A5 F2 E8 02 BA 
+added recv Result:
+Len: 0x0000003A
+F3 2D 65 A1 6F E6 5A 59 06 74 C1 A8 7A 50 BD BB 
+ A6 64 4C C6 09 31 8C 3E DD 8C 83 E3 50 7D 33 C8 
+ 16 70 0A E7 A2 20 EB 7D 3E E2 43 30 79 65 14 DA 
+ DE 22 19 93 99 29 9A D6 2F 87 
+cmp handshake:
+Len: 0x0000000A
+85 5E 00 00 00 01 00 00 00 01 
+other handshake rc4 bef decode data:
+Len: 0x0000002C
+BD BB A6 64 4C C6 09 31 8C 3E DD 8C 83 E3 50 7D 
+ 33 C8 16 70 0A E7 A2 20 EB 7D 3E E2 43 30 79 65 
+ 14 DA DE 22 19 93 99 29 9A D6 2F 87 
+other handshake rc4 after decode data:
+Len: 0x0000002C
+57 03 FC 3D 4A B3 C8 99 F6 6F 54 B5 62 EB A0 91 
+ 8E 27 AC 2D 7A 23 78 89 26 DF 04 A5 92 5B 50 81 
+ BE 97 5C 1D AA 93 28 79 56 4F B4 95 
+Decoded j (seq num): 1
+3 pkt buffer bef:
+Len: 0x00000021
+BB BF 6C F9 48 00 00 00 01 00 00 00 0F 25 03 00 
+ 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+ 00 
+3 pkt buffer aft rc4:
+Len: 0x00000021
+BB BF 6C B9 D9 B1 06 3B B0 E4 62 94 55 65 92 B1 
+ 06 3B B1 E4 62 94 5A AD 94 B9 6B 20 86 E6 F6 72 
+ 00 
+Now, 4 recv pkt Result:
+Len: 0x00000021
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+ 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+ 00 
+Sending first TCP packet
+Before RC4 encrypt
+Len: 0x0000001F
+3C 85 42 19 F2 01 85 41 42 4B DE 1B 9B E1 EE A9 
+ 1B EE F6 47 CD A4 C8 12 E0 3A 40 AE 31 3E E0 
+After RC4 encrypt
+Len: 0x0000001F
+52 E6 F1 58 76 52 07 26 9E D6 79 1E 31 F0 CA B1 
+ 9A E7 F3 CB 42 39 7B CD 7A 26 BD B4 0E 85 E3 
+Send pkt
+Len: 0x0000001F
+52 E6 F1 58 76 52 07 26 9E D6 79 1E 31 F0 CA B1 
+ 9A E7 F3 CB 42 39 7B CD 7A 26 BD B4 0E 85 E3 
+Result
+Len: 0x00000093
+EB 85 D6 EA 45 EA 04 8A BC 3F 56 C9 6B D2 68 E8 
+ DB AC 2D FD 26 66 CF BF 6B 76 EF C3 7E EA 28 90 
+ AF 4F 8B 54 46 8C 0B AD E7 C1 7F 8F 71 4F EA 58 
+ B6 AA 3B 16 79 D4 30 38 58 C2 2E C1 D2 BF 71 4E 
+ B1 AF 05 F0 C4 96 2C B7 67 6E 62 A5 D7 F3 98 F0 
+ 46 A9 C1 D8 9C D3 2A F9 D8 85 5D 1E 3A 04 73 C4 
+ 23 17 F7 53 A7 73 0A 46 BF 90 E0 E9 4D 30 FD 5B 
+ C7 E0 E1 E2 FF CD 47 9B 0C 2D C0 FA D6 40 2A 93 
+ 93 F8 5D 40 1F BC 27 ED 9D 2F 0C 03 75 98 A4 C1 
+ 0B F3 E9 
+Before RC4 decrypt
+Len: 0x00000093
+EB 85 D6 EA 45 EA 04 8A BC 3F 56 C9 6B D2 68 E8 
+ DB AC 2D FD 26 66 CF BF 6B 76 EF C3 7E EA 28 90 
+ AF 4F 8B 54 46 8C 0B AD E7 C1 7F 8F 71 4F EA 58 
+ B6 AA 3B 16 79 D4 30 38 58 C2 2E C1 D2 BF 71 4E 
+ B1 AF 05 F0 C4 96 2C B7 67 6E 62 A5 D7 F3 98 F0 
+ 46 A9 C1 D8 9C D3 2A F9 D8 85 5D 1E 3A 04 73 C4 
+ 23 17 F7 53 A7 73 0A 46 BF 90 E0 E9 4D 30 FD 5B 
+ C7 E0 E1 E2 FF CD 47 9B 0C 2D C0 FA D6 40 2A 93 
+ 93 F8 5D 40 1F BC 27 ED 9D 2F 0C 03 75 98 A4 C1 
+ 0B F3 E9 
+After RC4 decrypt
+Len: 0x00000093
+4C C4 51 21 FB 01 85 41 41 06 00 0B 34 00 0C C1 
+ BA AD A0 05 02 11 4E 51 95 EA C3 8B 00 10 D0 B8 
+ 02 00 2C 01 06 21 00 D4 01 C4 52 08 59 41 01 00 
+ 09 EA EC D9 1E 5B F9 02 41 07 05 01 41 02 00 00 
+ 02 00 01 BD EB 85 CE 01 05 01 41 02 00 00 03 00 
+ 01 E7 9C FB 6E 05 01 41 02 00 00 04 00 01 02 05 
+ 01 41 02 00 00 05 00 01 2A 05 01 41 02 00 00 80 
+ 02 00 01 A1 F8 B2 0B 05 01 41 02 00 00 81 02 00 
+ 01 E1 80 B1 44 05 01 41 02 00 00 06 00 01 8E E6 
+ A8 CC 01 
+{
+00-0B: 34 00 00 00
+00-0C: 41 5D 0B 54
+02-11: 78.81.149.234:50059
+00-10: 50 9C 00 00
+00-2C: 01 00 00 00
+06-21: 
+}
+
+{
+00-09: 6A 76 D6 03
+}
+
+{
+05-01: {
+00-00: 02 00 00 00
+00-01: BD 75 C1 19
+}
+05-01: {
+00-00: 03 00 00 00
+00-01: 67 CE DE 0D
+}
+05-01: {
+00-00: 04 00 00 00
+00-01: 02 00 00 00
+}
+05-01: {
+00-00: 05 00 00 00
+00-01: 2A 00 00 00
+}
+05-01: {
+00-00: 00 01 00 00
+00-01: 21 BC 6C 01
+}
+05-01: {
+00-00: 01 01 00 00
+00-01: 61 40 8C 08
+}
+05-01: {
+00-00: 06 00 00 00
+00-01: 0E 33 8A 19
+}
+}
+
+Looking for 02-11 (supernode ip:port) blob...
+BLOB found!
+Sending third TCP packet
+packed42:
+Len: 0x00000006
+42 34 5F 2D CA 1E 
+{
+00-00: 26 03 00 00
+00-05: 05 00 00 00
+}
+setup1pkt
+Len: 0x0000000D
+18 4B 6A 08 32 4B 69 42 34 5F 2D CA 1E 
+{
+00-00: 26 03 00 00
+00-05: 05 00 00 00
+}
+Before RC4 encrypt
+Len: 0x0000000D
+18 4B 6A 08 32 4B 69 42 34 5F 2D CA 1E 
+After RC4 encrypt
+Len: 0x0000000D
+51 8D 7F C0 E6 E1 7F 6B D8 E1 E5 C8 EB 
+Send pkt
+Len: 0x0000000D
+51 8D 7F C0 E6 E1 7F 6B D8 E1 E5 C8 EB 
+Result
+Len: 0x0000003C
+44 2B B2 91 47 28 29 41 A8 B9 1D 58 29 5A DA 58 
+ 75 AF 66 5B 4E 6D 1F 99 3A 76 BC E0 5B 6B 70 CB 
+ 0A 4E AC 03 9D 7B 40 3B 40 5A FA 52 24 DA 76 4F 
+ 6A 6D B3 3A 9D D4 12 6B ED 3D 4E 6B 
+Before RC4 decrypt
+Len: 0x0000003C
+44 2B B2 91 47 28 29 41 A8 B9 1D 58 29 5A DA 58 
+ 75 AF 66 5B 4E 6D 1F 99 3A 76 BC E0 5B 6B 70 CB 
+ 0A 4E AC 03 9D 7B 40 3B 40 5A FA 52 24 DA 76 4F 
+ 6A 6D B3 3A 9D D4 12 6B ED 3D 4E 6B 
+After RC4 decrypt
+Len: 0x0000003C
+76 C4 54 37 43 4B 69 41 01 05 06 41 07 02 03 9D 
+ 38 34 14 9C 5F 02 03 6F DD 4A 14 9C 5F 02 03 9D 
+ 37 82 94 9C 43 02 03 41 37 DF 14 9C 5F 02 03 9D 
+ 37 EB 94 9C 5F 00 00 A6 06 00 07 05 
+{
+05-06: {
+02-03: 157.56.52.20:40031
+02-03: 111.221.74.20:40031
+02-03: 157.55.130.148:40003
+02-03: 65.55.223.20:40031
+02-03: 157.55.235.148:40031
+00-00: 26 03 00 00
+00-07: 05 00 00 00
+}
+}
+
+Looking for 02-03 (supernode ip:port) blob...
+BLOB found!
+
+Slot: #806 0x00000326
+157.56.52.20:40031
+111.221.74.20:40031
+157.55.130.148:40003
+65.55.223.20:40031
+157.55.235.148:40031
+
+Saved 5 nodes.
+All done!
+Searching user: m-d-n2013
+slot: #806 (0x00000326)
+nodes in slot: 5
+sending search request
+target node ip: 157.56.52.20
+bef rc4:
+Len: 0x00000015
+13 72 36 95 42 F6 22 EB 7F 00 3B F8 C1 5F 34 AF 
+ 0A 34 FE BF D2 
+aft rc4:
+Len: 0x00000015
+87 38 7D 5D 0C C7 4B 04 08 6F 0F 5F 6D 24 B9 7B 
+ 79 56 10 80 AA 
+send pkt:
+Len: 0x00000020
+36 96 02 56 7A 02 E3 FD 2B 59 32 87 38 7D 5D 0C 
+ C7 4B 04 08 6F 0F 5F 6D 24 B9 7B 79 56 10 80 AA 
+ 
+Recv data:
+Len: 0x0000000B
+36 96 37 4E 51 95 EA F5 98 8D AF 
+Error. Some empty strange pkt received.
+bef rc4:
+Len: 0x00000000
+
+aft rc4:
+Len: 0x00000000
+
+<empty>
+
+timeout
+Error2. Some empty strange pkt received.
+Trying next node...
+sending search request
+target node ip: 111.221.74.20
+bef rc4:
+Len: 0x00000015
+13 72 4C 61 42 F6 22 EB 7F 00 3B F8 C1 5F 34 AF 
+ 0A 34 FE BF D2 
+aft rc4:
+Len: 0x00000015
+0A A2 A8 FE 5F B5 A6 08 C1 FD 0F 27 DA AC A6 2A 
+ 24 17 0C AD 70 
+send pkt:
+Len: 0x00000020
+4C 62 02 5E 74 0A 15 94 5B 46 BF 0A A2 A8 FE 5F 
+ B5 A6 08 C1 FD 0F 27 DA AC A6 2A 24 17 0C AD 70 
+ 
+Recv data:
+Len: 0x0000000B
+4C 62 27 4E 51 95 EA B5 94 36 21 
+Error. Some empty strange pkt received.
+bef rc4:
+Len: 0x00000000
+
+aft rc4:
+Len: 0x00000000
+
+<empty>
+
+timeout
+Error2. Some empty strange pkt received.
+Trying next node...
+sending search request
+target node ip: 157.55.130.148
+bef rc4:
+Len: 0x00000015
+13 72 35 D7 42 F6 22 EB 7F 00 3B F8 C1 5F 34 AF 
+ 0A 34 FE BF D2 
+aft rc4:
+Len: 0x00000015
+2C 72 E1 D5 EE 14 2E 07 E3 FE 84 44 A9 9A B4 C3 
+ A2 C6 FF 6F CA 
+send pkt:
+Len: 0x00000020
+35 D8 02 2C 31 7B 5C E1 24 C4 78 2C 72 E1 D5 EE 
+ 14 2E 07 E3 FE 84 44 A9 9A B4 C3 A2 C6 FF 6F CA 
+ 
+Recv data:
+Len: 0x0000000B
+35 D8 17 4E 51 95 EA 7C A8 96 B7 
+Error. Some empty strange pkt received.
+bef rc4:
+Len: 0x00000000
+
+aft rc4:
+Len: 0x00000000
+
+<empty>
+
+timeout
+Error2. Some empty strange pkt received.
+Trying next node...
+sending search request
+target node ip: 65.55.223.20
+bef rc4:
+Len: 0x00000015
+13 72 28 34 42 F6 22 EB 7F 00 3B F8 C1 5F 34 AF 
+ 0A 34 FE BF D2 
+aft rc4:
+Len: 0x00000015
+3E C2 61 8B 43 10 23 F6 5F BE D3 0E 51 0F 88 D7 
+ 6F 1B F7 9A CB 
+send pkt:
+Len: 0x00000020
+28 35 02 6A 57 10 98 66 6B 9C FE 3E C2 61 8B 43 
+ 10 23 F6 5F BE D3 0E 51 0F 88 D7 6F 1B F7 9A CB 
+ 
+Recv data:
+Len: 0x0000000B
+28 35 67 4E 51 95 EA 45 EC 50 CE 
+Error. Some empty strange pkt received.
+bef rc4:
+Len: 0x00000000
+
+aft rc4:
+Len: 0x00000000
+
+<empty>
+
+timeout
+Error2. Some empty strange pkt received.
+Trying next node...
+sending search request
+target node ip: 157.55.235.148
+bef rc4:
+Len: 0x00000015
+13 72 6B C9 42 F6 22 EB 7F 00 3B F8 C1 5F 34 AF 
+ 0A 34 FE BF D2 
+aft rc4:
+Len: 0x00000015
+6F D2 93 89 71 F1 81 0D 05 66 17 D4 F9 B9 15 BF 
+ 0C 24 0B 8D A6 
+send pkt:
+Len: 0x00000020
+6B CA 02 43 36 25 15 1C 9D 4B 5D 6F D2 93 89 71 
+ F1 81 0D 05 66 17 D4 F9 B9 15 BF 0C 24 0B 8D A6 
+ 
+Recv data:
+Len: 0x0000000B
+6B CA 27 4E 51 95 EA E5 F4 AF 11 
+Error. Some empty strange pkt received.
+bef rc4:
+Len: 0x00000000
+
+aft rc4:
+Len: 0x00000000
+
+<empty>
+
+timeout
+Error2. Some empty strange pkt received.
+Trying next node...
